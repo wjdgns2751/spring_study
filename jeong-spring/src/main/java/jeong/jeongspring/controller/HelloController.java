@@ -1,4 +1,4 @@
-package jeong.jeongspring.service.controller;
+package jeong.jeongspring.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
