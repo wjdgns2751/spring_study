@@ -1,4 +1,5 @@
 [![Java CI with Gradle](https://github.com/wjdgns2751/spring_study/actions/workflows/gradle.yml/badge.svg)](https://github.com/wjdgns2751/spring_study/actions/workflows/gradle.yml)
+<br>
 [![Gradle Package](https://github.com/wjdgns2751/spring_study/actions/workflows/gradle-publish.yml/badge.svg)](https://github.com/wjdgns2751/spring_study/actions/workflows/gradle-publish.yml)
 # spring_study
 
