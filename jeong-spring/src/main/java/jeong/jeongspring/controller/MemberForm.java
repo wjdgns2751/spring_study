@@ -1,4 +1,4 @@
-package jeong.jeongspring.model;
+package jeong.jeongspring.controller;
 
 public class MemberForm {
     private String name;
