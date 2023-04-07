@@ -28,7 +28,7 @@ class MemberServiceTest {
     }
 
     @Test
-    void 회원가입() {
+    void 회원가입() throws Exception{
         //given 주어진 조건
         Member member = new Member();
         member.setName("hello");
@@ -42,7 +42,7 @@ class MemberServiceTest {
     }
 
     @Test
-    void 중복회원예외() {
+    void 중복회원예외() throws Exception{
         //given
         Member member1 = new Member();
         member1.setName("spring");

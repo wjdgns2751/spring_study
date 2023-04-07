@@ -1,6 +1,7 @@
 package jeong.jeongspring;
 
 import jeong.jeongspring.repository.JdbcMemberRepository;
+import jeong.jeongspring.repository.JdbcTemplateMemberRepository;
 import jeong.jeongspring.repository.MemberRepository;
 import jeong.jeongspring.repository.MemoryMemberRepository;
 import jeong.jeongspring.service.MemberService;
@@ -25,9 +26,9 @@ public class SpringConfig {
     @Bean
     public MemberRepository memberRepository(){
         //return new MemoryMemberRepository();
-        return new JdbcMemberRepository(dataSource);
+        //return new JdbcMemberRepository(dataSource);
         // 객체지향적인 설계가 좋은 이유는 다형성을 활용하여 구현체 변경에 용이
-
+        return new JdbcTemplateMemberRepository(dataSource);
     }
 
      /*참고 : DI에는 field 주입, setter 주입, 생성자 주입 이렇게 3가지 방법이 있다. 의존관계가 실행중에 동적으로 변하는 경우는 거의 없으므로 생성자 주입을 권장한다.
