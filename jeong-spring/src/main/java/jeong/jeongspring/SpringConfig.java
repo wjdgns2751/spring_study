@@ -1,5 +1,6 @@
 package jeong.jeongspring;
 
+import jeong.jeongspring.aop.TimeTraceAop;
 import jeong.jeongspring.repository.*;
 import jeong.jeongspring.service.MemberService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -21,6 +22,14 @@ public class SpringConfig {
     public MemberService memberService(){
         return new MemberService(memberRepository);
     }
+
+    //특정 함수의 경우 직접 등록하여 인지시켜주는 것이 좋다.
+//    @Bean
+//    public TimeTraceAop timeTraceAop(){
+//        return new TimeTraceAop();
+//    }
+
+
 
    // @Bean
     //public MemberRepository memberRepository(){
