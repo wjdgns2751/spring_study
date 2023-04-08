@@ -1,5 +1,11 @@
 package jeong.jeongspring.domain;
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+
+@Entity
 public class Member {
 
     /**
@@ -7,7 +13,8 @@ public class Member {
      *    Command + N = 으로 Getter , Setter 생성
      *    Command + enter =
      * */
-    private Long id;
+    @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;   //DB가 알아서 생성되면 IDENTITY
     private String name;
 
     public Long getId() {
